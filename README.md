@@ -30,7 +30,7 @@ n8n queries Google Calendar for the requested time slot. If an overlap is detect
 **4. Event is created and confirmed**  
 If the slot is clear, n8n writes the event to Google Calendar and sends a confirmation back on Telegram.
 
-![Scheduling Demo](assets/scheduling-demo.png)
+![Scheduling Demo](input-schedule.jph)
 *Natural language input → event created and confirmed on Telegram*
 
 ---
