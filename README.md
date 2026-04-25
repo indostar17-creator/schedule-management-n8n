@@ -30,7 +30,7 @@ n8n queries Google Calendar for the requested time slot. If an overlap is detect
 **4. Event is created and confirmed**  
 If the slot is clear, n8n writes the event to Google Calendar and sends a confirmation back on Telegram.
 
-![Scheduling Demo](input-schedule.jph)
+![Scheduling Demo](input-schedule.jpg)
 *Natural language input → event created and confirmed on Telegram*
 
 ---
@@ -43,7 +43,7 @@ Send commands like "work on the design thinking assignment from 14:00-15:00" or 
 **Auto conflict detection**  
 Before writing any event, the system checks availability first. If the slot is already taken, the bot rejects the request immediately and tells you to resolve it manually — no silent overwrites, no double-booking.
 
-![Conflict Detection Demo](assets/conflict-demo.png)
+![Conflict Detection Demo](data-conflict.jpg)
 *Conflict detected at 16:00-17:00 — request rejected with a clear explanation*
 
 **Bulk template scheduling**  
@@ -52,7 +52,7 @@ A single trigger command reads a predefined weekly schedule from Google Sheets a
 **AI daily briefing**  
 On request, Gemini fetches all events for the day from Google Calendar, processes them, and returns a readable summary via Telegram — not a raw data dump, but an actual briefing.
 
-![Daily Summary Demo](assets/summary-demo.png)
+![Daily Summary Demo](summary.jpg)
 *"summary my schedule pls" → full day briefing with total activity count*
 
 ---
@@ -62,15 +62,6 @@ On request, Gemini fetches all events for the day from Google Calendar, processe
 - **Reactive, not proactive.** The system only runs when triggered. It doesn't remind you to plan or initiate scheduling on its own.
 - **No rescheduling command yet.** Moving an existing event requires manual deletion in Google Calendar first, then re-adding via the bot.
 - **Single user setup.** Credentials and calendar IDs are hardcoded — not plug-and-play for others without configuration.
-
----
-
-## What's Next
-
-- [ ] Proactive daily reminder to trigger weekly template
-- [ ] Rescheduling via Telegram ("pindahin jadwal statistika ke besok")
-- [ ] Smart priority detection from urgency keywords
-- [ ] Multi-user support with isolated calendar access
 
 ---
 
