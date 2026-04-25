@@ -15,7 +15,7 @@ This project eliminates that overhead. Instead of opening Google Calendar, you s
 
 ## How It Works
 
-![n8n Workflow Canvas](assets/workflow-canvas.png)
+![n8n Workflow Canvas](canvas.jpg)
 *Full automation pipeline: Telegram trigger → Gemini NLP extraction → conflict check → Google Calendar*
 
 **1. Send a natural language command via Telegram**  
